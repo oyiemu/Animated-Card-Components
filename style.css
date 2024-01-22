@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(30, 18%, 87%);
+	font-family: sans-serif;
+}
+.container {
+	max-width: 900px;
+	width: 100%;
+	margin:0 auto;
+	padding: 20px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.card-3 {
+	background: linear-gradient(to right, #90aeff, #90aeff);
+	background-size: 0%;
+	transition: 0.1s;
+}
+
+.card {
+	width: 250px;
+	height: 160px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 20px;
+	cursor: default;
+	box-shadow: 3px 3px 10px #d3a096;
+}
+
+.card img {
+	width: 30px;
+	height: 30px;
+	transition: 0.3s;
+}
+.card h3 {
+	font-weight: bold;
+}
+
+.card-sub-heading h4 {
+	margin-top: 20px;
+}
+
+.card-sub-heading {
+	transform: translateY(35px);
+	transition: 0.3s;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-sub-heading svg {
+	align-self: flex-end;
+}
+
+.card-sub-heading h3 {
+	margin: 8px 0;
+}
+
+.circle {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	bottom: -80px;
+	right: -80px;
+	transition: 0.3s ease-out;
+}
+
+.circle-1 {
+	background-color: #5ed94f;
+	outline: 20px solid #94ec89;
+}
+.circle-2 {
+	background-color: #fb717e;
+	outline: 20px solid #fda4aa;
+}
+.circle-3 {
+	background-color: #6480ff;
+	outline: 20px solid #90aeff;
+}
+
+/*.circle-4 {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	transition: 0.3s ease-out;
+	background-color: #90aeff;
+	top: -80px;
+	left: -80px;
+}
+
+.circle-4:hover {
+	transform: scale(8.0);
+}*/
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.movein {
+	bottom: -20px;
+	right: -20px;
+}
+.moveout {
+	bottom: -80px;
+	right: -80px;
+}
+.moveup {
+	transform: translateY(0);
+}
+.movedown {
+	transform: translateY(35px);
+}
+.scaledown {
+	transform: scale(0.8);
+}
+.scaleup {
+	transform: scale(1.0);
+}
+
+
+.bg-green {
+	background-color: #c4f5bd;
+}
+.bg-red {
+	background-color: #fecdd1;
+}
+.bg-blue {
+	background-color: #c2d9ff;
+}
+.text-green {
+	color: #299e1b;
+}
+.text-red {
+	color: #e11d3e
+}
+.text-blue {
+	color: #3649f5;
+}
